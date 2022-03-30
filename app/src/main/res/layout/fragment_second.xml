@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SecondFragment"
+    android:background="@drawable/img"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="50sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:fontFamily="sans-serif"
+        android:textStyle="italic|bold"
+        android:text="0"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="130dp"
+        android:background="@drawable/button"
+        android:layout_height="68dp"
+        android:layout_marginTop="44dp"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_count" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="130dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/botton2"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:visibility="gone"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

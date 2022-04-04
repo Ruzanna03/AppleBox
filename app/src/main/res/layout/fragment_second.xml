@@ -24,34 +24,49 @@
         android:text="0"
         android:textColor="@color/white"/>
 
+    <TextView
+        android:id="@+id/tv_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:fontFamily="sans-serif"
+        android:textStyle="italic|bold"
+        tools:text="0"
+        android:textColor="@color/white"/>
+
     <Button
         android:id="@+id/plus"
         android:layout_width="130dp"
-        android:background="@drawable/button"
         android:layout_height="68dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/button"
         android:text="+"
         android:textColor="@color/white"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_count" />
+        app:layout_constraintTop_toBottomOf="@id/tv_max" />
 
     <Button
         android:id="@+id/minus"
         android:layout_width="130dp"
         android:layout_height="68dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="68dp"
         android:background="@drawable/botton2"
         android:text="-"
         android:textColor="@color/white"
         android:textSize="48sp"
-        app:layout_constraintTop_toBottomOf="@id/tv_count"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        />
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_max" />
 
     <Button
         android:id="@+id/btn_reset"
@@ -65,6 +80,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="30dp"
         />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progress_horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        tools:ignore ="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_max" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
